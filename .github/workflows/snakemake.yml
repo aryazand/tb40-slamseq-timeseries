@@ -1,0 +1,33 @@
+name: Snakemake
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  snakemake:
+    name: Run Snakemake Pipeline
+    runs-on: self-hosted
+
+    defaults:
+      run:
+        shell: bash -l {0}  # login shell so conda environments are sourced
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: full-run
+        uses: snakemake/snakemake-github-action@v2
+        with:
+          snakefile: "workflow/Snakefile"
+          args: "--directory . --cores all --sdm conda --conda-cleanup-pkgs cache"      
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: snakemake-results
+          path: results/          # adjust to your output directory
+          retention-days: 30
