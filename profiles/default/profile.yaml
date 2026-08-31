@@ -1,0 +1,6 @@
+use-conda: true
+use-apptainer: true
+cores: 10
+printshellcmds: true
+resources: 
+  file_lock=1
