@@ -2,6 +2,7 @@ name: jbrowse
 channels:
   - bioconda
   - conda-forge
+  - nodefaults
 dependencies:
   - _openmp_mutex=4.5=20_gnu
   - bcftools=1.24=h118bc1c_2

@@ -18,6 +18,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Set conda channel priority to flexible
+        run: conda config --set channel_priority flexible
+
       - name: full-run
         uses: snakemake/snakemake-github-action@v2
         with:
