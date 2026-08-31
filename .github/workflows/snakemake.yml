@@ -25,7 +25,8 @@ jobs:
         uses: snakemake/snakemake-github-action@v2
         with:
           snakefile: "workflow/Snakefile"
-          args: "--directory . --cores all --sdm conda --conda-cleanup-pkgs cache"      
+          install-apptainer: true
+          args: "--directory . --cores all --sdm apptainer --conda-cleanup-pkgs cache"      
 
       - name: Upload results
         if: always()
