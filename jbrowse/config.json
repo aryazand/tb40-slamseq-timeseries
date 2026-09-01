@@ -1,0 +1,107 @@
+{
+  "assemblies": [
+    {
+      "name": "genome",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "genome-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "TwoBitAdapter",
+          "twoBitLocation": {
+            "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/results/results/genome/genome.2bit",
+            "locationType": "UriLocation"
+          }
+        }
+      }
+    }
+  ],
+  "configuration": {},
+  "connections": [],
+  "defaultSession": {
+    "name": "New Session"
+  },
+  "tracks": [
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_4sU_IAA_rep2.minus",
+      "name": "72hpi_4sU_IAA_rep2.minus",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/results/results/deeptools/coverage/72hpi_4sU_IAA_rep2.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "genome.sorted.gff",
+      "name": "genome.sorted.gff",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/results/results/genome/genome.sorted.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/results/results/genome/genome.sorted.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_4sU_IAA_rep1.minus",
+      "name": "72hpi_4sU_IAA_rep1.minus",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/results/results/deeptools/coverage/72hpi_4sU_IAA_rep1.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_4sU_IAA_rep2.plus",
+      "name": "72hpi_4sU_IAA_rep2.plus",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/results/results/deeptools/coverage/72hpi_4sU_IAA_rep2.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_4sU_IAA_rep1.plus",
+      "name": "72hpi_4sU_IAA_rep1.plus",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/results/results/deeptools/coverage/72hpi_4sU_IAA_rep1.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    }
+  ]
+}
