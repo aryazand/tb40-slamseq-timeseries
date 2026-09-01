@@ -95,7 +95,7 @@ mapping_stats:
     extra: ""
   deeptools_coverage:
     genome_size: 1000
-    extra: ""
+    extra: "--binSize 1 --normalizeUsing BPM"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # 3. Common Configs
@@ -112,13 +112,14 @@ qc:
 # ─────────────────────────────────────────────────────────────────────────────
 
 jbrowse:
-  dir: "./jbrowse"
+  dir: "jbrowse"
+  s3_url: "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/results"
   add_assembly:
     name: 
-    extra: "--load symlink"
+    extra:
   add_anno:
     name: 
-    extra: "--load symlink"
+    extra:
   add_bw:
     name: 
-    extra: "--load symlink"
+    extra:

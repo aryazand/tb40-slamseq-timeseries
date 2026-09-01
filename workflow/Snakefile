@@ -53,7 +53,21 @@ module snakemake_align:
 # use all rules from https://github.com/ZandvakiliLab/snakemake-prep-reads
 use rule * from snakemake_align exclude multiqc as snakemake_align_*
 
+use rule get_genome from snakemake_align as snakemake_align_get_genome with: 
+    input:
+        branch(
+            lambda wc: snakemake_align.REFS[wc.ref]["source"] == "local",
+            then=lambda wc: local(snakemake_align.REFS[wc.ref]["local"]["fasta"]),
+            otherwise=rules.snakemake_align_ncbi_datasets.output.fasta,
+        ),
 
+use rule get_gff from snakemake_align as snakemake_align_get_gff with: 
+    input:
+        branch(
+            lambda wc: snakemake_align.REFS[wc.ref]["source"] == "local",
+            then=lambda wc: local(snakemake_align.REFS[wc.ref]["local"]["gff"]),
+            otherwise=rules.snakemake_align_ncbi_datasets.output.gff,
+        ),
 # ─────────────────────────────────────────────────────────────────────────────
 # 3. Module rule Modification
 # ─────────────────────────────────────────────────────────────────────────────

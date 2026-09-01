@@ -1,6 +1,7 @@
 rule jbrowse_create:
     output:
         touch("results/jbrowse/create"),
+        local(config["jbrowse"]["dir"] + "/index.html"),
     conda:
         "../envs/jbrowse.yml"
     params:
@@ -31,23 +32,24 @@ rule faToTwoBit_fa:
 
 rule jbrowse_add_assembly:
     input:
-        "results/jbrowse/create",
-        assembly="results/genome/genome.2bit",
+        local(config["jbrowse"]["dir"] + "/index.html"),
+        assembly=local("results/genome/genome.2bit"),
     output:
         touch("results/jbrowse/add_assembly"),
-        "jbrowse/config.json"
+        local(config["jbrowse"]["dir"] + "/config.json"),
     conda:
         "../envs/jbrowse.yml"
     resources:
         file_lock=1,
     params:
+        s3_url=config["jbrowse"]["s3_url"],
         jbrowse_config=config["jbrowse"]["dir"] + "/config.json",
         extra=config["jbrowse"]["add_assembly"]["extra"],
     message:
         "add genome assembly to jbrowse"
     shell:
         """
-        jbrowse add-assembly {input.assembly} --type twoBit --target {params.jbrowse_config} {params.extra} --force
+        jbrowse add-assembly {params.s3_url}/{input.assembly} --type twoBit --target {params.jbrowse_config} {params.extra} --force
         """
 
 
@@ -88,8 +90,8 @@ rule index_gff:
 
 rule jbrowse_add_anno:
     input:
-        "jbrowse/config.json",
-        gff="results/genome/genome.sorted.gff.gz",
+        local(config["jbrowse"]["dir"] + "/config.json"),
+        gff=local("results/genome/genome.sorted.gff.gz"),
         gff_index="results/genome/genome.sorted.gff.gz.tbi",
     output:
         touch("results/jbrowse/add_anno"),
@@ -98,13 +100,14 @@ rule jbrowse_add_anno:
     resources:
         file_lock=1,
     params:
-        jbrowse_config="{dir}/config.json".format(dir=config["jbrowse"]["dir"]),
+        s3_url=config["jbrowse"]["s3_url"],
+        jbrowse_config=config["jbrowse"]["dir"] + "/config.json",
         extra=config["jbrowse"]["add_anno"]["extra"],
     message:
         "add genome annotation to jbrowse"
     shell:
         """
-        jbrowse add-track {input.gff} --target {params.jbrowse_config} {params.extra}
+        jbrowse add-track {params.s3_url}/{input.gff} --target {params.jbrowse_config} {params.extra}
         """
 
 
@@ -115,8 +118,8 @@ rule jbrowse_add_anno:
 
 rule jbrowse_add_bw:
     input:
-        "jbrowse/config.json",
-        bw="results/deeptools/coverage/{sample}.{strand}.bw",
+        local(config["jbrowse"]["dir"] + "/config.json"),
+        bw=local("results/deeptools/coverage/{sample}.{strand}.bw"),
     output:
         touch("results/jbrowse/{sample}_{strand}_bw"),
     wildcard_constraints:
@@ -127,11 +130,12 @@ rule jbrowse_add_bw:
     resources:
         file_lock=1,
     params:
-        jbrowse_config="{dir}/config.json".format(dir=config["jbrowse"]["dir"]),
+        s3_url=config["jbrowse"]["s3_url"],
+        jbrowse_config=config["jbrowse"]["dir"] + "/config.json",
         extra=config["jbrowse"]["add_bw"]["extra"],
     message:
         "add bw track {wildcards.sample}_{wildcards.strand}.bw to jbrowse"
     shell:
         """
-        jbrowse add-track {input.bw} --target {params.jbrowse_config} {params.extra}
+        jbrowse add-track {params.s3_url}/{input.bw} --target {params.jbrowse_config} {params.extra}
         """
