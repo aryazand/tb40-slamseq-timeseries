@@ -6,7 +6,7 @@ samplesheet: "config/samples.tsv"
 
 get_fastq:
   PE: true
-  tool: "fastq_dump"
+  tool: "fasterq_dump"
   fastq_dump:
     extra: "-X 10000"
   fasterq_dump:
@@ -39,15 +39,15 @@ genome:
       assembly: ""
       extra: ""
   human:
-    source: "local" # local vs ncbi database
+    source: "ncbi" # local vs ncbi database
     prefix:
     local:
-      fasta: "data/chrMT.fna"
-      gff: "data/chrMT.gff"
+      fasta:
+      gff:
     datasets:
       genbank:
-      assembly:
-      extra: 
+      assembly: "GCF_000001405.40"
+      extra: ""
 
 # Configs for alignment tools
 mapping:
@@ -113,13 +113,13 @@ qc:
 
 jbrowse:
   dir: "jbrowse"
-  s3_url: "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/results"
+  s3_url: "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries" #No trailing slash
   add_assembly:
     name: 
-    extra:
+    extra: "--alias 'human_tb40' --displayName 'Human + TB40'"
   add_anno:
     name: 
-    extra:
+    extra: "--name 'annotation'"
   add_bw:
     name: 
-    extra:
+    extra: ""
