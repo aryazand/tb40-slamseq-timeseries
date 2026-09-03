@@ -1,3 +1,17 @@
 sample	description	accession	read1	read2
-72hpi_4sU_IAA_rep2	TB40 72hpi 4sU + IAA rep2	SRR17281022
-72hpi_4sU_IAA_rep1	TB40 72hpi 4sU + IAA rep1	SRR17281023
+72hpi_4sU_IAA_XRN1_GCV_rep1	72hpi 4sU + IAA + XRN1 + GCV Replicate 1	SRR17281030
+96hpi_4sU_IAA_XRN1_rep1	96hpi 4sU + IAA + XRN1 Replicate 1	SRR17281031
+72hpi_4sU_IAA_XRN1_rep2	72hpi 4sU + IAA + XRN1 Replicate 2	SRR17281032
+48hpi_4sU_IAA_XRN1_rep1	48hpi 4sU + IAA + XRN1 Replicate 1	SRR17281033
+24hpi_4sU_IAA_XRN1_rep2	24hpi 4sU + IAA + XRN1 Replicate 2	SRR17281034
+12hpi_4sU_IAA_XRN1_rep2	12hpi 4sU + IAA + XRN1 Replicate 2	SRR17281035
+6hpi_4sU_IAA_XRN1_rep2	6hpi 4sU + IAA + XRN1 Replicate 2	SRR17281036
+2hpi_4sU_IAA_XRN1_rep2	2hpi 4sU + IAA + XRN1 Replicate 2	SRR17281037
+Mock_4sU_IAA_XRN1_rep3	Mock 4sU + IAA + XRN1 Replicate 3	SRR17281038
+Mock_4sU_IAA_XRN1_rep2	Mock 4sU + IAA + XRN1 Replicate 2	SRR17281039
+72hpi_4sU_IAA_XRN1_rep1	72hpi 4sU + IAA + XRN1 Replicate 1	SRR17281040
+24hpi_4sU_IAA_XRN1_rep1	24hpi 4sU + IAA + XRN1 Replicate 1	SRR17281041
+12hpi_4sU_IAA_XRN1_rep1	12hpi 4sU + IAA + XRN1 Replicate 1	SRR17281042
+6hpi_4sU_IAA_XRN1_rep1	6hpi 4sU + IAA + XRN1 Replicate 1	SRR17281043
+2hpi_4sU_IAA_XRN1_rep1	2hpi 4sU + IAA + XRN1 Replicate 1	SRR17281044
+Mock_4sU_IAA_XRN1_rep1	Mock 4sU + IAA + XRN1 Replicate 1	SRR17281045
