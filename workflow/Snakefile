@@ -99,6 +99,9 @@ rule all:
     default_target: True
     input:
         "results/multiqc/multiqc_report.html",
+        expand(
+            "results/processed_alignment/cram/{sample}.cram.crai", sample=samples.index
+        ),
 
 rule jbrowse:
     input:
