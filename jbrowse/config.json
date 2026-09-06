@@ -27,6 +27,246 @@
   "tracks": [
     {
       "type": "QuantitativeTrack",
+      "trackId": "12hpi_4sU_IAA_XRN1_rep1.plus",
+      "name": "12hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/12hpi_4sU_IAA_XRN1_rep1.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "12hpi_4sU_IAA_XRN1_rep2.plus",
+      "name": "12hpi_4sU_IAA_XRN1_rep2.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/12hpi_4sU_IAA_XRN1_rep2.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "24hpi_4sU_IAA_XRN1_rep1.plus",
+      "name": "24hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/24hpi_4sU_IAA_XRN1_rep1.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "24hpi_4sU_IAA_XRN1_rep2.plus",
+      "name": "24hpi_4sU_IAA_XRN1_rep2.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/24hpi_4sU_IAA_XRN1_rep2.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "2hpi_4sU_IAA_XRN1_rep1.plus",
+      "name": "2hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/2hpi_4sU_IAA_XRN1_rep1.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "2hpi_4sU_IAA_XRN1_rep2.plus",
+      "name": "2hpi_4sU_IAA_XRN1_rep2.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/2hpi_4sU_IAA_XRN1_rep2.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "48hpi_4sU_IAA_XRN1_rep1.plus",
+      "name": "48hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/48hpi_4sU_IAA_XRN1_rep1.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "6hpi_4sU_IAA_XRN1_rep1.plus",
+      "name": "6hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/6hpi_4sU_IAA_XRN1_rep1.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "6hpi_4sU_IAA_XRN1_rep2.plus",
+      "name": "6hpi_4sU_IAA_XRN1_rep2.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/6hpi_4sU_IAA_XRN1_rep2.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_4sU_IAA_XRN1_GCV_rep1.plus",
+      "name": "72hpi_4sU_IAA_XRN1_GCV_rep1.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_GCV_rep1.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_4sU_IAA_XRN1_rep1.plus",
+      "name": "72hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_rep1.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_4sU_IAA_XRN1_rep2.plus",
+      "name": "72hpi_4sU_IAA_XRN1_rep2.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_rep2.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "96hpi_4sU_IAA_XRN1_rep1.plus",
+      "name": "96hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/96hpi_4sU_IAA_XRN1_rep1.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Mock_4sU_IAA_XRN1_rep1.plus",
+      "name": "Mock_4sU_IAA_XRN1_rep1.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/Mock_4sU_IAA_XRN1_rep1.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Mock_4sU_IAA_XRN1_rep2.plus",
+      "name": "Mock_4sU_IAA_XRN1_rep2.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/Mock_4sU_IAA_XRN1_rep2.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Mock_4sU_IAA_XRN1_rep3.plus",
+      "name": "Mock_4sU_IAA_XRN1_rep3.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/Mock_4sU_IAA_XRN1_rep3.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "genome"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
       "trackId": "12hpi_4sU_IAA_XRN1_rep1.minus",
       "name": "12hpi_4sU_IAA_XRN1_rep1.minus.bw",
       "adapter": {
@@ -400,13 +640,17 @@
       ]
     },
     {
-      "type": "QuantitativeTrack",
-      "trackId": "12hpi_4sU_IAA_XRN1_rep1.plus",
-      "name": "12hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "type": "AlignmentsTrack",
+      "trackId": "12hpi_4sU_IAA_XRN1_rep1",
+      "name": "12hpi_4sU_IAA_XRN1_rep1.cram",
       "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/12hpi_4sU_IAA_XRN1_rep1.plus.bw",
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep1.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep1.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -415,13 +659,17 @@
       ]
     },
     {
-      "type": "QuantitativeTrack",
-      "trackId": "12hpi_4sU_IAA_XRN1_rep2.plus",
-      "name": "12hpi_4sU_IAA_XRN1_rep2.plus.bw",
+      "type": "AlignmentsTrack",
+      "trackId": "12hpi_4sU_IAA_XRN1_rep2",
+      "name": "12hpi_4sU_IAA_XRN1_rep2.cram",
       "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/12hpi_4sU_IAA_XRN1_rep2.plus.bw",
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep2.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep2.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -430,13 +678,17 @@
       ]
     },
     {
-      "type": "QuantitativeTrack",
-      "trackId": "24hpi_4sU_IAA_XRN1_rep1.plus",
-      "name": "24hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "type": "AlignmentsTrack",
+      "trackId": "24hpi_4sU_IAA_XRN1_rep1",
+      "name": "24hpi_4sU_IAA_XRN1_rep1.cram",
       "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/24hpi_4sU_IAA_XRN1_rep1.plus.bw",
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep1.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep1.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -445,13 +697,17 @@
       ]
     },
     {
-      "type": "QuantitativeTrack",
-      "trackId": "24hpi_4sU_IAA_XRN1_rep2.plus",
-      "name": "24hpi_4sU_IAA_XRN1_rep2.plus.bw",
+      "type": "AlignmentsTrack",
+      "trackId": "24hpi_4sU_IAA_XRN1_rep2",
+      "name": "24hpi_4sU_IAA_XRN1_rep2.cram",
       "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/24hpi_4sU_IAA_XRN1_rep2.plus.bw",
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep2.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep2.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -460,13 +716,17 @@
       ]
     },
     {
-      "type": "QuantitativeTrack",
-      "trackId": "2hpi_4sU_IAA_XRN1_rep1.plus",
-      "name": "2hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "type": "AlignmentsTrack",
+      "trackId": "2hpi_4sU_IAA_XRN1_rep1",
+      "name": "2hpi_4sU_IAA_XRN1_rep1.cram",
       "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/2hpi_4sU_IAA_XRN1_rep1.plus.bw",
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep1.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep1.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -475,13 +735,17 @@
       ]
     },
     {
-      "type": "QuantitativeTrack",
-      "trackId": "2hpi_4sU_IAA_XRN1_rep2.plus",
-      "name": "2hpi_4sU_IAA_XRN1_rep2.plus.bw",
+      "type": "AlignmentsTrack",
+      "trackId": "2hpi_4sU_IAA_XRN1_rep2",
+      "name": "2hpi_4sU_IAA_XRN1_rep2.cram",
       "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/2hpi_4sU_IAA_XRN1_rep2.plus.bw",
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep2.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep2.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -490,13 +754,17 @@
       ]
     },
     {
-      "type": "QuantitativeTrack",
-      "trackId": "48hpi_4sU_IAA_XRN1_rep1.plus",
-      "name": "48hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "type": "AlignmentsTrack",
+      "trackId": "48hpi_4sU_IAA_XRN1_rep1",
+      "name": "48hpi_4sU_IAA_XRN1_rep1.cram",
       "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/48hpi_4sU_IAA_XRN1_rep1.plus.bw",
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/48hpi_4sU_IAA_XRN1_rep1.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/48hpi_4sU_IAA_XRN1_rep1.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -505,13 +773,17 @@
       ]
     },
     {
-      "type": "QuantitativeTrack",
-      "trackId": "6hpi_4sU_IAA_XRN1_rep1.plus",
-      "name": "6hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "type": "AlignmentsTrack",
+      "trackId": "6hpi_4sU_IAA_XRN1_rep1",
+      "name": "6hpi_4sU_IAA_XRN1_rep1.cram",
       "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/6hpi_4sU_IAA_XRN1_rep1.plus.bw",
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep1.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep1.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -520,13 +792,17 @@
       ]
     },
     {
-      "type": "QuantitativeTrack",
-      "trackId": "6hpi_4sU_IAA_XRN1_rep2.plus",
-      "name": "6hpi_4sU_IAA_XRN1_rep2.plus.bw",
+      "type": "AlignmentsTrack",
+      "trackId": "6hpi_4sU_IAA_XRN1_rep2",
+      "name": "6hpi_4sU_IAA_XRN1_rep2.cram",
       "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/6hpi_4sU_IAA_XRN1_rep2.plus.bw",
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep2.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep2.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -535,13 +811,17 @@
       ]
     },
     {
-      "type": "QuantitativeTrack",
-      "trackId": "72hpi_4sU_IAA_XRN1_GCV_rep1.plus",
-      "name": "72hpi_4sU_IAA_XRN1_GCV_rep1.plus.bw",
+      "type": "AlignmentsTrack",
+      "trackId": "72hpi_4sU_IAA_XRN1_GCV_rep1",
+      "name": "72hpi_4sU_IAA_XRN1_GCV_rep1.cram",
       "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_GCV_rep1.plus.bw",
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_GCV_rep1.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_GCV_rep1.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -550,13 +830,17 @@
       ]
     },
     {
-      "type": "QuantitativeTrack",
-      "trackId": "72hpi_4sU_IAA_XRN1_rep1.plus",
-      "name": "72hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "type": "AlignmentsTrack",
+      "trackId": "72hpi_4sU_IAA_XRN1_rep1",
+      "name": "72hpi_4sU_IAA_XRN1_rep1.cram",
       "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_rep1.plus.bw",
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep1.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep1.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -565,13 +849,17 @@
       ]
     },
     {
-      "type": "QuantitativeTrack",
-      "trackId": "72hpi_4sU_IAA_XRN1_rep2.plus",
-      "name": "72hpi_4sU_IAA_XRN1_rep2.plus.bw",
+      "type": "AlignmentsTrack",
+      "trackId": "72hpi_4sU_IAA_XRN1_rep2",
+      "name": "72hpi_4sU_IAA_XRN1_rep2.cram",
       "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_rep2.plus.bw",
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep2.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep2.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -580,13 +868,17 @@
       ]
     },
     {
-      "type": "QuantitativeTrack",
-      "trackId": "96hpi_4sU_IAA_XRN1_rep1.plus",
-      "name": "96hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "type": "AlignmentsTrack",
+      "trackId": "96hpi_4sU_IAA_XRN1_rep1",
+      "name": "96hpi_4sU_IAA_XRN1_rep1.cram",
       "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/96hpi_4sU_IAA_XRN1_rep1.plus.bw",
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/96hpi_4sU_IAA_XRN1_rep1.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/96hpi_4sU_IAA_XRN1_rep1.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -595,13 +887,17 @@
       ]
     },
     {
-      "type": "QuantitativeTrack",
-      "trackId": "Mock_4sU_IAA_XRN1_rep1.plus",
-      "name": "Mock_4sU_IAA_XRN1_rep1.plus.bw",
+      "type": "AlignmentsTrack",
+      "trackId": "Mock_4sU_IAA_XRN1_rep1",
+      "name": "Mock_4sU_IAA_XRN1_rep1.cram",
       "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/Mock_4sU_IAA_XRN1_rep1.plus.bw",
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep1.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep1.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -610,13 +906,17 @@
       ]
     },
     {
-      "type": "QuantitativeTrack",
-      "trackId": "Mock_4sU_IAA_XRN1_rep2.plus",
-      "name": "Mock_4sU_IAA_XRN1_rep2.plus.bw",
+      "type": "AlignmentsTrack",
+      "trackId": "Mock_4sU_IAA_XRN1_rep2",
+      "name": "Mock_4sU_IAA_XRN1_rep2.cram",
       "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/Mock_4sU_IAA_XRN1_rep2.plus.bw",
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep2.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep2.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -625,13 +925,17 @@
       ]
     },
     {
-      "type": "QuantitativeTrack",
-      "trackId": "Mock_4sU_IAA_XRN1_rep3.plus",
-      "name": "Mock_4sU_IAA_XRN1_rep3.plus.bw",
+      "type": "AlignmentsTrack",
+      "trackId": "Mock_4sU_IAA_XRN1_rep3",
+      "name": "Mock_4sU_IAA_XRN1_rep3.cram",
       "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/deeptools/coverage/Mock_4sU_IAA_XRN1_rep3.plus.bw",
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep3.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://rna-seq-494166748697.s3.us-east-2.amazonaws.com/tb40_slamseq_timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep3.cram.crai",
           "locationType": "UriLocation"
         }
       },

@@ -162,3 +162,42 @@ rule jbrowse_add_bw:
                 {params.extra}
         done
         """
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 3. Add BigWigs
+# ─────────────────────────────────────────────────────────────────────────────
+
+
+rule jbrowse_add_cram:
+    input:
+        local(config["jbrowse"]["dir"] + "/config.json"),
+    output:
+        touch(
+            expand(
+                "results/jbrowse/{sample}_cram",
+                sample=samples.index,
+            )
+        ),
+    conda:
+        "../envs/jbrowse.yml"
+    resources:
+        file_lock=1,
+    params:
+        s3_url=expand(
+            config["jbrowse"]["s3_url"] + "/results/processed_alignment/cram/{sample}.cram",
+            sample=samples.index
+        ),
+        jbrowse_config=config["jbrowse"]["dir"] + "/config.json",
+        extra=config["jbrowse"]["add_cram"]["extra"],
+    message:
+        "add plus cram tracks to jbrowse"
+    shell:
+        """
+        for i in {params.s3_url}; do
+            jbrowse add-track $i \
+                --indexFile $i.crai \
+                --target {params.jbrowse_config} \
+                --name "${{i##*/}}" \
+                {params.extra}
+        done
+        """

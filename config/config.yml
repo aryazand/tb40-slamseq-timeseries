@@ -123,3 +123,6 @@ jbrowse:
   add_bw:
     name: 
     extra: ""
+  add_cram:
+    name: 
+    extra: ""
