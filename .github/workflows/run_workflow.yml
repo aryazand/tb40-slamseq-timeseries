@@ -1,0 +1,42 @@
+# .github/workflows/run_workflow.yml
+name: RNA-seq Pipeline
+
+on:
+  push:
+    branches: [main, gha-ephemeral-runner]
+  workflow_dispatch:
+
+jobs:
+  snakemake:
+    # Must match the labels you set in the GARM pool
+    runs-on: [self-hosted, linux, jetstream2, snakemake]
+
+    # Optional: cancel in-progress runs on new push to same branch
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Snakemake
+        uses: snakemake/snakemake-github-action@v2
+        with:
+          directory: "."
+          snakefile: "workflow/Snakefile"
+          args: "results/ncbi/cmv.fasta --cores all"
+          stagein: "mamba install -n snakemake bioconda::snakemake-storage-plugin-s3" #install plugin into snakemake environment 
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_ENDPOINT_URL: https://js2.jetstream-cloud.org:8001
+          AWS_DEFAULT_REGION: us-east-1
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-results-${{ github.sha }}
+          path: results/
+          retention-days: 30
