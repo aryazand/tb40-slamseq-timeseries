@@ -76,7 +76,7 @@ mapping_postprocessing:
   samtools_index:
     extra: ""
   deduplication:
-    enabled: true
+    enabled: false
     tool: "picard"
     umi_tools:
       extra: "" # or directional, cluster, adjacency, etc.

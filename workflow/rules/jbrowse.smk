@@ -198,6 +198,7 @@ rule jbrowse_add_cram:
                 --indexFile $i.crai \
                 --target {params.jbrowse_config} \
                 --name "${{i##*/}}" \
+                --config '{{"displays":[{{"type":"LinearPileupDisplay", "colorBySetting": {{"type": "strand"}}}}]}}' \
                 {params.extra}
         done
         """
