@@ -3,5 +3,5 @@ use-apptainer: true
 printshellcmds: true
 resources: 
   file_lock=1
-default-storage-provider: "s3"
-default-storage-prefix: "s3://rna-seq-494166748697/tb40_slamseq_timeseries/"
+default-storage-provider: s3
+default-storage-prefix: s3://slamseq-timeseries
