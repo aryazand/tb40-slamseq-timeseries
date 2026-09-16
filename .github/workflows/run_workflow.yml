@@ -11,42 +11,6 @@ on:
       - '.github/workflows/run_workflow.yml'
 
 jobs:
-  snakemake:
-    # Must match the labels you set in the GARM pool
-    runs-on: [self-hosted, linux, jetstream2, snakemake]
-
-    # Optional: cancel in-progress runs on new push to same branch
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-      cancel-in-progress: true
-    
-    needs: lint
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Run Snakemake
-        uses: snakemake/snakemake-github-action@v2
-        with:
-          directory: "."
-          snakefile: "workflow/Snakefile"
-          args: "--cores all"
-          stagein: "mamba install -n snakemake bioconda::snakemake-storage-plugin-s3" #install plugin into snakemake environment 
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_ENDPOINT_URL: https://js2.jetstream-cloud.org:8001
-          AWS_DEFAULT_REGION: us-east-1
-
-      - name: Upload results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: pipeline-results-${{ github.sha }}
-          path: results/
-          retention-days: 30
-
   lint:
     name: Lint
     runs-on: ubuntu-latest
@@ -59,9 +23,41 @@ jobs:
           directory: "."
           snakefile: "workflow/Snakefile"
           args: "--lint"
-          stagein: "mamba install -n snakemake bioconda::snakemake-storage-plugin-s3" #install plugin into snakemake environment 
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_ENDPOINT_URL: https://js2.jetstream-cloud.org:8001
-          AWS_DEFAULT_REGION: us-east-1
+
+  snakemake:
+    # Must match the labels you set in the GARM pool
+    runs-on: [self-hosted, linux, jetstream2, snakemake]
+
+    # Optional: cancel in-progress runs on new push to same branch
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
+    
+    needs: lint
+
+    env:
+      RESULTS_DIR: "/mnt/snakemake/"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Snakemake
+        uses: snakemake/snakemake-github-action@v2
+        with:
+          directory: "."
+          snakefile: "workflow/Snakefile"
+          args: |
+              --jobs 4
+              --use-conda
+              --use-apptainer
+              --default-resources "disk_mb=15000" "tmpdir='/home/runner/'"
+              --resources "disk_mb=60000"
+              --default-storage-provider fs
+              --default-storage-prefix ${RESULTS_DIR}
+              --shared-fs-usage persistence software-deployment sources source-cache
+              --local-storage-prefix /home/runner/snakemake-scratch
+              --rerun-incomplete
+              --cores all
+              --show-failed-logs
+          stagein: "mamba install -n snakemake bioconda::snakemake-storage-plugin-fs"

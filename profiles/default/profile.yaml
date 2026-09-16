@@ -1,7 +1,3 @@
 use-conda: true
 use-apptainer: true
 printshellcmds: true
-resources: 
-  file_lock=1
-default-storage-provider: s3
-default-storage-prefix: s3://slamseq-timeseries

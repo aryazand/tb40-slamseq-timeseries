@@ -94,7 +94,7 @@ mapping_stats:
   rseqc_bam_stat:
     extra: ""
   deeptools_coverage:
-    genome_size: 1000
+    genome_size: 2913260081
     extra: "--binSize 1 --normalizeUsing BPM"
 
 # ─────────────────────────────────────────────────────────────────────────────
