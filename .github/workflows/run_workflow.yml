@@ -2,10 +2,6 @@
 name: RNA-seq Pipeline
 
 on:
-  workflow_run:
-    workflows: ["Linting and Testing"]
-    types:
-      - completed
   push:
     branches: [main]
     paths:
@@ -13,7 +9,6 @@ on:
       - 'config/**'
       - 'profiles/**'
       - '.github/workflows/run_workflow.yml'
-  workflow_dispatch:
 
 jobs:
   snakemake:
@@ -24,6 +19,8 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true
+    
+    needs: lint
 
     steps:
       - name: Checkout repository
@@ -49,3 +46,22 @@ jobs:
           name: pipeline-results-${{ github.sha }}
           path: results/
           retention-days: 30
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Linting
+        uses: snakemake/snakemake-github-action@v2
+        with:
+          directory: "."
+          snakefile: "workflow/Snakefile"
+          args: "--lint"
+          stagein: "mamba install -n snakemake bioconda::snakemake-storage-plugin-s3" #install plugin into snakemake environment 
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_ENDPOINT_URL: https://js2.jetstream-cloud.org:8001
+          AWS_DEFAULT_REGION: us-east-1
