@@ -47,17 +47,16 @@ jobs:
         with:
           directory: "."
           snakefile: "workflow/Snakefile"
-          args: |
-              --jobs 4
-              --use-conda
-              --use-apptainer
-              --default-resources "disk_mb=15000" "tmpdir='/home/runner/'"
-              --resources "disk_mb=60000"
-              --default-storage-provider fs
-              --default-storage-prefix ${RESULTS_DIR}
-              --shared-fs-usage persistence software-deployment sources source-cache
-              --local-storage-prefix /home/runner/snakemake-scratch
-              --rerun-incomplete
-              --cores all
-              --show-failed-logs
+        args: |
+            --use-conda
+            --use-apptainer
+            --default-resources "disk_mb=25000" "tmpdir='/home/runner'"
+            --resources "disk_mb=55000"
+            --default-storage-provider fs
+            --default-storage-prefix ${{ env.RESULTS_DIR }}
+            --shared-fs-usage persistence software-deployment sources source-cache
+            --local-storage-prefix /home/runner/snakemake-scratch
+            --rerun-incomplete
+            --cores all
+            --show-failed-logs
           stagein: "mamba install -n snakemake bioconda::snakemake-storage-plugin-fs"
