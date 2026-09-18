@@ -73,6 +73,9 @@ use rule get_gff from snakemake_align as snakemake_align_get_gff with:
 
 
 use rule star_index from snakemake_align as snakemake_align_star_index with:
+    input:
+        fasta="results/genome/genome.fasta",
+        gtf="results/genome/genome.gff",
     threads: 8
 
 
