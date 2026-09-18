@@ -1,3 +1,1 @@
-use-conda: true
-use-apptainer: true
 printshellcmds: true

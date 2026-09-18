@@ -39,14 +39,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Prepare directories
-        run: mkdir -p /mnt/snakemake/tmp /mnt/snakemake/snakemake-scratch
-        
       - name: Run Snakemake
         uses: snakemake/snakemake-github-action@v2
         with:
           directory: "."
           snakefile: "workflow/Snakefile"
-          args: "--cores all --use-conda --use-apptainer --default-resources 'tmpdir=\"/mnt/snakemake/tmp\"' --default-storage-provider fs --default-storage-prefix /mnt/snakemake --shared-fs-usage persistence software-deployment sources source-cache --local-storage-prefix /mnt/snakemake/snakemake-scratch --rerun-incomplete --show-failed-logs"
+          install-apptainer: "true"
+          args: >-
+            --cores all
+            --software-deployment-method apptainer conda
+            --resources disk_mb=270000
+            --default-resources disk_mb=75000
+            --default-storage-provider fs
+            --default-storage-prefix /mnt/snakemake
+            --shared-fs-usage software-deployment persistence sources source-cache
+            --local-storage-prefix /home/runner/snakemake-scratch
+            --rerun-incomplete
+            --show-failed-logs
+            --conda-prefix "/mnt/snakemake/conda"
           stagein: "mamba install -n snakemake bioconda::snakemake-storage-plugin-fs"
           show-disk-usage-on-error: true
