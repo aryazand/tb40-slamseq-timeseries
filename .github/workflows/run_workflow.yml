@@ -35,6 +35,8 @@ jobs:
     
     needs: lint
 
+    timeout-minutes: 2880
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
