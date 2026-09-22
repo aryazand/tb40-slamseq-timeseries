@@ -103,7 +103,7 @@ mapping_stats:
 
 qc:
   multiqc:
-    extra: "--verbose --dirs"
+    extra: "--verbose"
   fastqc:
     extra: "--quiet"
 
