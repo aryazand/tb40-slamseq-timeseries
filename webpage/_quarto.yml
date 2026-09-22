@@ -1,0 +1,29 @@
+project:
+  type: website
+  resources:
+    - jbrowse/
+    - multiqc/
+    
+website:
+  title: "Test RNA-Seq Website"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: multiqc.qmd
+        text: Quality Control
+      - href: jbrowse.qmd
+        text: Alignment Browser
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+
+

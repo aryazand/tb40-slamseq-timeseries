@@ -94,6 +94,7 @@ use rule multiqc from snakemake_prep_reads as snakemake_prep_reads_multiqc with:
 # 4. Default Target
 # ─────────────────────────────────────────────────────────────────────────────
 
+include: "rules/jbrowse.smk"
 
 rule all:
     default_target: True
@@ -102,3 +103,4 @@ rule all:
         expand(
             "results/processed_alignment/cram/{sample}.cram.crai", sample=samples.index
         ),
+        "jbrowse/config.json"

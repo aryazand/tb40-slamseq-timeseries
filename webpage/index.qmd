@@ -1,0 +1,7 @@
+---
+title: "TB40/E SLAM-Seq Results"
+---
+
+This is a website displaying data for the SLAM-seq experiment performed on TB40/E infected fibroblasts. 
+The original data can be found in the [GEO database](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE191299) under accession number GSE191299. 
+It was originally described in a preprint by [J&uumlrges et al.](http://biorxiv.org/lookup/doi/10.1101/2022.01.07.472583). 
