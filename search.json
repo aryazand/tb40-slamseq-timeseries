@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "The author of the website is me."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "TB40/E SLAM-Seq Results",
+    "section": "",
+    "text": "This is a website displaying data for the SLAM-seq experiment performed on TB40/E infected fibroblasts. The original data can be found in the GEO database under accession number GSE191299. It was originally described in a preprint by J&uumlrges et al.."
+  }
+]
