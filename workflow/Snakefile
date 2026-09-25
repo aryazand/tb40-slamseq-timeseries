@@ -53,9 +53,11 @@ module snakemake_align:
 # use all rules from https://github.com/ZandvakiliLab/snakemake-prep-reads
 use rule * from snakemake_align exclude multiqc as snakemake_align_*
 
+
 # ─────────────────────────────────────────────────────────────────────────────
 # 3. Module rule Modification
 # ─────────────────────────────────────────────────────────────────────────────
+
 
 use rule get_genome from snakemake_align as snakemake_align_get_genome with:
     input:
@@ -81,7 +83,8 @@ use rule star_index from snakemake_align as snakemake_align_star_index with:
         gtf="results/genome/genome.gff",
     threads: 8
 
-use rule deeptools_coverage from snakemake_align as snakemake_align_deeptools_coverage with: 
+
+use rule deeptools_coverage from snakemake_align as snakemake_align_deeptools_coverage with:
     params:
         effective_genome_size=config["mapping_stats"]["deeptools_coverage"][
             "genome_size"
@@ -93,6 +96,7 @@ use rule deeptools_coverage from snakemake_align as snakemake_align_deeptools_co
             )
         ),
 
+
 use rule multiqc from snakemake_prep_reads as snakemake_prep_reads_multiqc with:
     input:
         lambda wc: snakemake_prep_reads.get_multiqc_input(wc)
@@ -102,6 +106,7 @@ use rule multiqc from snakemake_prep_reads as snakemake_prep_reads_multiqc with:
 # ─────────────────────────────────────────────────────────────────────────────
 # 4. Default Target
 # ─────────────────────────────────────────────────────────────────────────────
+
 
 rule all:
     default_target: True
@@ -114,4 +119,4 @@ rule all:
                 config.get("mapping_postprocessing", {}).get("filter", {}).keys()
             ),
         ),
-        "jbrowse/config.json"
+        "jbrowse/config.json",

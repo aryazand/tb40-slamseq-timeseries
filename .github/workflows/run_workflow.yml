@@ -56,12 +56,11 @@ jobs:
             --set-resources star_align:mem_mb=38000
             --set-resources star_align:threads=4 
             --default-storage-provider fs
-            --default-storage-prefix /mnt/snakemake/
+            --default-storage-prefix /mnt/snakemake/${{ github.event.repository.name }}
             --shared-fs-usage software-deployment persistence sources source-cache
             --local-storage-prefix /home/runner/snakemake-scratch
             --rerun-incomplete
             --show-failed-logs
-            --conda-prefix "/mnt/snakemake/conda"
           stagein: "mamba install -n snakemake bioconda::snakemake-storage-plugin-fs"
           show-disk-usage-on-error: true
 
@@ -77,12 +76,8 @@ jobs:
           
       - name: Transfer Results to Container 
         run: | 
-          rclone copy /mnt/snakemake/results/ jetstream2://zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results --update
-          rclone copy /mnt/snakemake/jbrowse/config.json jetstream2://zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/jbrowse/ --update
-      
-      - name: Clean up Jbrowse Artifacts
-        run: |
-          rm -rf /mnt/snakemake/results/jbrowse/
+          rclone copy /mnt/snakemake/${{ github.event.repository.name }}/results/ jetstream2://zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results --update
+          rclone copy /mnt/snakemake/${{ github.event.repository.name }}/jbrowse/config.json jetstream2://zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/jbrowse/ --update
         
   website:
     name: Create and Publish Website
