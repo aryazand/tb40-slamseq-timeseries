@@ -38,6 +38,12 @@ jobs:
     timeout-minutes: 2880
     
     steps:
+      - name: Verify Manila mount
+        run: |
+          mountpoint -q /mnt/snakemake || (echo "Manila not mounted!" && exit 1)
+          ls /mnt/snakemake/${{ github.event.repository.name }} || echo "Repo dir not yet present, OK"
+          df -h /mnt/snakemake
+    
       - name: Checkout repository
         uses: actions/checkout@v4
 
