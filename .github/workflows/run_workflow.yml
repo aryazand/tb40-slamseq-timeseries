@@ -41,7 +41,7 @@ jobs:
       - name: Verify Manila mount
         run: |
           mountpoint -q /mnt/snakemake || (echo "Manila not mounted!" && exit 1)
-          ls /mnt/snakemake/${{ github.event.repository.name }} || echo "Repo dir not yet present, OK"
+          ls /mnt/snakemake/ || echo "Repo dir not yet present, OK"
           df -h /mnt/snakemake
     
       - name: Checkout repository
@@ -62,7 +62,7 @@ jobs:
             --set-resources star_align:mem_mb=38000
             --set-resources star_align:threads=4 
             --default-storage-provider fs
-            --default-storage-prefix /mnt/snakemake/${{ github.event.repository.name }}
+            --default-storage-prefix /mnt/snakemake/
             --shared-fs-usage software-deployment persistence sources source-cache
             --local-storage-prefix /home/runner/snakemake-scratch
             --rerun-incomplete
@@ -83,8 +83,8 @@ jobs:
           
       - name: Transfer Results to Container 
         run: | 
-          rclone copy /mnt/snakemake/${{ github.event.repository.name }}/results/ jetstream2://zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results --update
-          rclone copy /mnt/snakemake/${{ github.event.repository.name }}/jbrowse/config.json jetstream2://zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/jbrowse/ --update
+          rclone copy /mnt/snakemake/results/ jetstream2://zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results --update
+          rclone copy /mnt/snakemake/jbrowse/config.json jetstream2://zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/jbrowse/ --update
         
   website:
     name: Create and Publish Website
