@@ -77,7 +77,7 @@ jobs:
             --cores all
             --printshellcmds
             --software-deployment-method apptainer conda
-            --resources disk_mb=270000 mem_mb=55000 file_lock=1
+            --resources disk_mb=270000 mem_mb=55000
             --default-resources disk_mb=75000 mem_mb=38000
             --set-resources star_align:mem_mb=38000
             --set-resources star_align:threads=4 
@@ -87,6 +87,7 @@ jobs:
             --local-storage-prefix /home/runner/snakemake-scratch
             --rerun-incomplete
             --show-failed-logs
+            --verbose
           stagein: "mamba install -n snakemake bioconda::snakemake-storage-plugin-fs"
           show-disk-usage-on-error: true
 
