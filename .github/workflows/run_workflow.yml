@@ -57,6 +57,8 @@ jobs:
       !cancelled() &&
       (needs.changes.outputs.snakemake == 'true' || needs.changes.outputs.workflow == 'true')
 
+    timeout-minutes: 2880
+    
     steps:
       - name: Verify Manila mount
         run: |
