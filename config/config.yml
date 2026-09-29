@@ -100,7 +100,7 @@ mapping_stats:
     genome_size:
       cmv: 236000
       human: 3130250755
-    extra: "--binSize 1 --normalizeUsing BPM --verbose"
+    extra: "--binSize 1 --normalizeUsing CPM --verbose"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # 3. Common Configs
