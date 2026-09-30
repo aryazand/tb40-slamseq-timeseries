@@ -1,305 +1,297 @@
 {
   "assemblies": [
     {
-      "name": "genome",
+      "name": "cmv",
       "sequence": {
         "type": "ReferenceSequenceTrack",
-        "trackId": "genome-ReferenceSequenceTrack",
+        "trackId": "cmv-ReferenceSequenceTrack",
         "adapter": {
           "type": "TwoBitAdapter",
           "twoBitLocation": {
-            "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/genome/genome.2bit",
+            "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/genome/cmv.2bit",
             "locationType": "UriLocation"
           }
         }
       },
-      "aliases": [
-        "human_tb40"
-      ],
-      "displayName": "Human + TB40"
+      "displayName": "CMV_TB40"
+    },
+    {
+      "name": "human",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "human-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "TwoBitAdapter",
+          "twoBitLocation": {
+            "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/genome/human.2bit",
+            "locationType": "UriLocation"
+          }
+        }
+      },
+      "displayName": "Human"
     }
   ],
-  "configuration": {},
-  "connections": [],
-  "defaultSession": {
-    "name": "New Session"
-  },
   "tracks": [
     {
       "type": "FeatureTrack",
-      "trackId": "genome.sorted.gff",
-      "name": "annotation",
+      "trackId": "cmv.sorted.gff",
+      "name": "CMV_TB40_Annotation",
       "adapter": {
         "type": "Gff3TabixAdapter",
         "gffGzLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/genome/genome.sorted.gff.gz",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/genome/cmv.sorted.gff.gz",
           "locationType": "UriLocation"
         },
         "index": {
           "location": {
-            "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/genome/genome.sorted.gff.gz.tbi",
+            "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/genome/cmv.sorted.gff.gz.tbi",
             "locationType": "UriLocation"
           },
           "indexType": "TBI"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ]
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "12hpi_4sU_IAA_XRN1_rep1.plus",
-      "name": "12hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "trackId": "12hpi_4sU_IAA_XRN1_rep1.cmv.plus",
+      "name": "12hpi_4sU_IAA_XRN1_rep1.cmv.plus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/12hpi_4sU_IAA_XRN1_rep1.plus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/12hpi_4sU_IAA_XRN1_rep1.cmv.plus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ]
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "12hpi_4sU_IAA_XRN1_rep2.plus",
-      "name": "12hpi_4sU_IAA_XRN1_rep2.plus.bw",
+      "trackId": "12hpi_4sU_IAA_XRN1_rep2.cmv.plus",
+      "name": "12hpi_4sU_IAA_XRN1_rep2.cmv.plus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/12hpi_4sU_IAA_XRN1_rep2.plus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/12hpi_4sU_IAA_XRN1_rep2.cmv.plus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ]
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "24hpi_4sU_IAA_XRN1_rep1.plus",
-      "name": "24hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "trackId": "24hpi_4sU_IAA_XRN1_rep1.cmv.plus",
+      "name": "24hpi_4sU_IAA_XRN1_rep1.cmv.plus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/24hpi_4sU_IAA_XRN1_rep1.plus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/24hpi_4sU_IAA_XRN1_rep1.cmv.plus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ]
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "24hpi_4sU_IAA_XRN1_rep2.plus",
-      "name": "24hpi_4sU_IAA_XRN1_rep2.plus.bw",
+      "trackId": "24hpi_4sU_IAA_XRN1_rep2.cmv.plus",
+      "name": "24hpi_4sU_IAA_XRN1_rep2.cmv.plus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/24hpi_4sU_IAA_XRN1_rep2.plus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/24hpi_4sU_IAA_XRN1_rep2.cmv.plus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ]
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "2hpi_4sU_IAA_XRN1_rep1.plus",
-      "name": "2hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "trackId": "2hpi_4sU_IAA_XRN1_rep1.cmv.plus",
+      "name": "2hpi_4sU_IAA_XRN1_rep1.cmv.plus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/2hpi_4sU_IAA_XRN1_rep1.plus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/2hpi_4sU_IAA_XRN1_rep1.cmv.plus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ]
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "2hpi_4sU_IAA_XRN1_rep2.plus",
-      "name": "2hpi_4sU_IAA_XRN1_rep2.plus.bw",
+      "trackId": "2hpi_4sU_IAA_XRN1_rep2.cmv.plus",
+      "name": "2hpi_4sU_IAA_XRN1_rep2.cmv.plus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/2hpi_4sU_IAA_XRN1_rep2.plus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/2hpi_4sU_IAA_XRN1_rep2.cmv.plus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ]
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "48hpi_4sU_IAA_XRN1_rep1.plus",
-      "name": "48hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "trackId": "48hpi_4sU_IAA_XRN1_rep1.cmv.plus",
+      "name": "48hpi_4sU_IAA_XRN1_rep1.cmv.plus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/48hpi_4sU_IAA_XRN1_rep1.plus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/48hpi_4sU_IAA_XRN1_rep1.cmv.plus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ]
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "6hpi_4sU_IAA_XRN1_rep1.plus",
-      "name": "6hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "trackId": "6hpi_4sU_IAA_XRN1_rep1.cmv.plus",
+      "name": "6hpi_4sU_IAA_XRN1_rep1.cmv.plus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/6hpi_4sU_IAA_XRN1_rep1.plus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/6hpi_4sU_IAA_XRN1_rep1.cmv.plus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ]
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "6hpi_4sU_IAA_XRN1_rep2.plus",
-      "name": "6hpi_4sU_IAA_XRN1_rep2.plus.bw",
+      "trackId": "6hpi_4sU_IAA_XRN1_rep2.cmv.plus",
+      "name": "6hpi_4sU_IAA_XRN1_rep2.cmv.plus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/6hpi_4sU_IAA_XRN1_rep2.plus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/6hpi_4sU_IAA_XRN1_rep2.cmv.plus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ]
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "72hpi_4sU_IAA_XRN1_GCV_rep1.plus",
-      "name": "72hpi_4sU_IAA_XRN1_GCV_rep1.plus.bw",
+      "trackId": "72hpi_4sU_IAA_XRN1_GCV_rep1.cmv.plus",
+      "name": "72hpi_4sU_IAA_XRN1_GCV_rep1.cmv.plus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_GCV_rep1.plus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_GCV_rep1.cmv.plus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ]
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "72hpi_4sU_IAA_XRN1_rep1.plus",
-      "name": "72hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "trackId": "72hpi_4sU_IAA_XRN1_rep1.cmv.plus",
+      "name": "72hpi_4sU_IAA_XRN1_rep1.cmv.plus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_rep1.plus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_rep1.cmv.plus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ]
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "72hpi_4sU_IAA_XRN1_rep2.plus",
-      "name": "72hpi_4sU_IAA_XRN1_rep2.plus.bw",
+      "trackId": "72hpi_4sU_IAA_XRN1_rep2.cmv.plus",
+      "name": "72hpi_4sU_IAA_XRN1_rep2.cmv.plus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_rep2.plus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_rep2.cmv.plus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ]
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "96hpi_4sU_IAA_XRN1_rep1.plus",
-      "name": "96hpi_4sU_IAA_XRN1_rep1.plus.bw",
+      "trackId": "96hpi_4sU_IAA_XRN1_rep1.cmv.plus",
+      "name": "96hpi_4sU_IAA_XRN1_rep1.cmv.plus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/96hpi_4sU_IAA_XRN1_rep1.plus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/96hpi_4sU_IAA_XRN1_rep1.cmv.plus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ]
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "Mock_4sU_IAA_XRN1_rep1.plus",
-      "name": "Mock_4sU_IAA_XRN1_rep1.plus.bw",
+      "trackId": "Mock_4sU_IAA_XRN1_rep2.cmv.plus",
+      "name": "Mock_4sU_IAA_XRN1_rep2.cmv.plus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/Mock_4sU_IAA_XRN1_rep1.plus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/Mock_4sU_IAA_XRN1_rep2.cmv.plus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ]
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "Mock_4sU_IAA_XRN1_rep2.plus",
-      "name": "Mock_4sU_IAA_XRN1_rep2.plus.bw",
+      "trackId": "Mock_4sU_IAA_XRN1_rep3.cmv.plus",
+      "name": "Mock_4sU_IAA_XRN1_rep3.cmv.plus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/Mock_4sU_IAA_XRN1_rep2.plus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/Mock_4sU_IAA_XRN1_rep3.cmv.plus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ]
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "Mock_4sU_IAA_XRN1_rep3.plus",
-      "name": "Mock_4sU_IAA_XRN1_rep3.plus.bw",
+      "trackId": "12hpi_4sU_IAA_XRN1_rep1.cmv.minus",
+      "name": "12hpi_4sU_IAA_XRN1_rep1.cmv.minus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/Mock_4sU_IAA_XRN1_rep3.plus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/12hpi_4sU_IAA_XRN1_rep1.cmv.minus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
-      ]
-    },
-    {
-      "type": "QuantitativeTrack",
-      "trackId": "12hpi_4sU_IAA_XRN1_rep1.minus",
-      "name": "12hpi_4sU_IAA_XRN1_rep1.minus.bw",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/12hpi_4sU_IAA_XRN1_rep1.minus.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -311,17 +303,17 @@
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "12hpi_4sU_IAA_XRN1_rep2.minus",
-      "name": "12hpi_4sU_IAA_XRN1_rep2.minus.bw",
+      "trackId": "12hpi_4sU_IAA_XRN1_rep2.cmv.minus",
+      "name": "12hpi_4sU_IAA_XRN1_rep2.cmv.minus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/12hpi_4sU_IAA_XRN1_rep2.minus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/12hpi_4sU_IAA_XRN1_rep2.cmv.minus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -333,17 +325,17 @@
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "24hpi_4sU_IAA_XRN1_rep1.minus",
-      "name": "24hpi_4sU_IAA_XRN1_rep1.minus.bw",
+      "trackId": "24hpi_4sU_IAA_XRN1_rep1.cmv.minus",
+      "name": "24hpi_4sU_IAA_XRN1_rep1.cmv.minus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/24hpi_4sU_IAA_XRN1_rep1.minus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/24hpi_4sU_IAA_XRN1_rep1.cmv.minus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -355,17 +347,17 @@
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "24hpi_4sU_IAA_XRN1_rep2.minus",
-      "name": "24hpi_4sU_IAA_XRN1_rep2.minus.bw",
+      "trackId": "24hpi_4sU_IAA_XRN1_rep2.cmv.minus",
+      "name": "24hpi_4sU_IAA_XRN1_rep2.cmv.minus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/24hpi_4sU_IAA_XRN1_rep2.minus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/24hpi_4sU_IAA_XRN1_rep2.cmv.minus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -377,17 +369,17 @@
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "2hpi_4sU_IAA_XRN1_rep1.minus",
-      "name": "2hpi_4sU_IAA_XRN1_rep1.minus.bw",
+      "trackId": "2hpi_4sU_IAA_XRN1_rep1.cmv.minus",
+      "name": "2hpi_4sU_IAA_XRN1_rep1.cmv.minus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/2hpi_4sU_IAA_XRN1_rep1.minus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/2hpi_4sU_IAA_XRN1_rep1.cmv.minus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -399,17 +391,17 @@
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "2hpi_4sU_IAA_XRN1_rep2.minus",
-      "name": "2hpi_4sU_IAA_XRN1_rep2.minus.bw",
+      "trackId": "2hpi_4sU_IAA_XRN1_rep2.cmv.minus",
+      "name": "2hpi_4sU_IAA_XRN1_rep2.cmv.minus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/2hpi_4sU_IAA_XRN1_rep2.minus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/2hpi_4sU_IAA_XRN1_rep2.cmv.minus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -421,17 +413,17 @@
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "48hpi_4sU_IAA_XRN1_rep1.minus",
-      "name": "48hpi_4sU_IAA_XRN1_rep1.minus.bw",
+      "trackId": "48hpi_4sU_IAA_XRN1_rep1.cmv.minus",
+      "name": "48hpi_4sU_IAA_XRN1_rep1.cmv.minus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/48hpi_4sU_IAA_XRN1_rep1.minus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/48hpi_4sU_IAA_XRN1_rep1.cmv.minus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -443,17 +435,17 @@
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "6hpi_4sU_IAA_XRN1_rep1.minus",
-      "name": "6hpi_4sU_IAA_XRN1_rep1.minus.bw",
+      "trackId": "6hpi_4sU_IAA_XRN1_rep1.cmv.minus",
+      "name": "6hpi_4sU_IAA_XRN1_rep1.cmv.minus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/6hpi_4sU_IAA_XRN1_rep1.minus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/6hpi_4sU_IAA_XRN1_rep1.cmv.minus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -465,17 +457,17 @@
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "6hpi_4sU_IAA_XRN1_rep2.minus",
-      "name": "6hpi_4sU_IAA_XRN1_rep2.minus.bw",
+      "trackId": "6hpi_4sU_IAA_XRN1_rep2.cmv.minus",
+      "name": "6hpi_4sU_IAA_XRN1_rep2.cmv.minus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/6hpi_4sU_IAA_XRN1_rep2.minus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/6hpi_4sU_IAA_XRN1_rep2.cmv.minus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -487,17 +479,17 @@
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "72hpi_4sU_IAA_XRN1_GCV_rep1.minus",
-      "name": "72hpi_4sU_IAA_XRN1_GCV_rep1.minus.bw",
+      "trackId": "72hpi_4sU_IAA_XRN1_GCV_rep1.cmv.minus",
+      "name": "72hpi_4sU_IAA_XRN1_GCV_rep1.cmv.minus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_GCV_rep1.minus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_GCV_rep1.cmv.minus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -509,17 +501,17 @@
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "72hpi_4sU_IAA_XRN1_rep1.minus",
-      "name": "72hpi_4sU_IAA_XRN1_rep1.minus.bw",
+      "trackId": "72hpi_4sU_IAA_XRN1_rep1.cmv.minus",
+      "name": "72hpi_4sU_IAA_XRN1_rep1.cmv.minus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_rep1.minus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_rep1.cmv.minus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -531,17 +523,17 @@
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "72hpi_4sU_IAA_XRN1_rep2.minus",
-      "name": "72hpi_4sU_IAA_XRN1_rep2.minus.bw",
+      "trackId": "72hpi_4sU_IAA_XRN1_rep2.cmv.minus",
+      "name": "72hpi_4sU_IAA_XRN1_rep2.cmv.minus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_rep2.minus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_rep2.cmv.minus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -553,17 +545,17 @@
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "96hpi_4sU_IAA_XRN1_rep1.minus",
-      "name": "96hpi_4sU_IAA_XRN1_rep1.minus.bw",
+      "trackId": "96hpi_4sU_IAA_XRN1_rep1.cmv.minus",
+      "name": "96hpi_4sU_IAA_XRN1_rep1.cmv.minus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/96hpi_4sU_IAA_XRN1_rep1.minus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/96hpi_4sU_IAA_XRN1_rep1.cmv.minus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -575,17 +567,17 @@
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "Mock_4sU_IAA_XRN1_rep1.minus",
-      "name": "Mock_4sU_IAA_XRN1_rep1.minus.bw",
+      "trackId": "Mock_4sU_IAA_XRN1_rep2.cmv.minus",
+      "name": "Mock_4sU_IAA_XRN1_rep2.cmv.minus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/Mock_4sU_IAA_XRN1_rep1.minus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/Mock_4sU_IAA_XRN1_rep2.cmv.minus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -597,39 +589,17 @@
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "Mock_4sU_IAA_XRN1_rep2.minus",
-      "name": "Mock_4sU_IAA_XRN1_rep2.minus.bw",
+      "trackId": "Mock_4sU_IAA_XRN1_rep3.cmv.minus",
+      "name": "Mock_4sU_IAA_XRN1_rep3.cmv.minus.bw",
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/Mock_4sU_IAA_XRN1_rep2.minus.bw",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/Mock_4sU_IAA_XRN1_rep3.cmv.minus.bw",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
-      ],
-      "displays": [
-        {
-          "type": "LinearWiggleDisplay",
-          "displayId": "my_bw-LinearWiggleDisplay",
-          "inverted": true
-        }
-      ]
-    },
-    {
-      "type": "QuantitativeTrack",
-      "trackId": "Mock_4sU_IAA_XRN1_rep3.minus",
-      "name": "Mock_4sU_IAA_XRN1_rep3.minus.bw",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/Mock_4sU_IAA_XRN1_rep3.minus.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -641,21 +611,21 @@
     },
     {
       "type": "AlignmentsTrack",
-      "trackId": "12hpi_4sU_IAA_XRN1_rep1",
-      "name": "12hpi_4sU_IAA_XRN1_rep1.cram",
+      "trackId": "12hpi_4sU_IAA_XRN1_rep1_cmv",
+      "name": "12hpi_4sU_IAA_XRN1_rep1_cmv.cram",
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep1.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep1_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep1.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -668,21 +638,21 @@
     },
     {
       "type": "AlignmentsTrack",
-      "trackId": "12hpi_4sU_IAA_XRN1_rep2",
-      "name": "12hpi_4sU_IAA_XRN1_rep2.cram",
+      "trackId": "12hpi_4sU_IAA_XRN1_rep2_cmv",
+      "name": "12hpi_4sU_IAA_XRN1_rep2_cmv.cram",
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep2.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep2_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep2.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep2_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -695,21 +665,21 @@
     },
     {
       "type": "AlignmentsTrack",
-      "trackId": "24hpi_4sU_IAA_XRN1_rep1",
-      "name": "24hpi_4sU_IAA_XRN1_rep1.cram",
+      "trackId": "24hpi_4sU_IAA_XRN1_rep1_cmv",
+      "name": "24hpi_4sU_IAA_XRN1_rep1_cmv.cram",
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep1.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep1_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep1.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -722,21 +692,21 @@
     },
     {
       "type": "AlignmentsTrack",
-      "trackId": "24hpi_4sU_IAA_XRN1_rep2",
-      "name": "24hpi_4sU_IAA_XRN1_rep2.cram",
+      "trackId": "24hpi_4sU_IAA_XRN1_rep2_cmv",
+      "name": "24hpi_4sU_IAA_XRN1_rep2_cmv.cram",
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep2.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep2_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep2.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep2_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -749,21 +719,21 @@
     },
     {
       "type": "AlignmentsTrack",
-      "trackId": "2hpi_4sU_IAA_XRN1_rep1",
-      "name": "2hpi_4sU_IAA_XRN1_rep1.cram",
+      "trackId": "2hpi_4sU_IAA_XRN1_rep1_cmv",
+      "name": "2hpi_4sU_IAA_XRN1_rep1_cmv.cram",
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep1.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep1_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep1.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -776,21 +746,21 @@
     },
     {
       "type": "AlignmentsTrack",
-      "trackId": "2hpi_4sU_IAA_XRN1_rep2",
-      "name": "2hpi_4sU_IAA_XRN1_rep2.cram",
+      "trackId": "2hpi_4sU_IAA_XRN1_rep2_cmv",
+      "name": "2hpi_4sU_IAA_XRN1_rep2_cmv.cram",
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep2.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep2_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep2.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep2_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -803,21 +773,21 @@
     },
     {
       "type": "AlignmentsTrack",
-      "trackId": "48hpi_4sU_IAA_XRN1_rep1",
-      "name": "48hpi_4sU_IAA_XRN1_rep1.cram",
+      "trackId": "48hpi_4sU_IAA_XRN1_rep1_cmv",
+      "name": "48hpi_4sU_IAA_XRN1_rep1_cmv.cram",
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/48hpi_4sU_IAA_XRN1_rep1.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/48hpi_4sU_IAA_XRN1_rep1_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/48hpi_4sU_IAA_XRN1_rep1.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/48hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -830,21 +800,21 @@
     },
     {
       "type": "AlignmentsTrack",
-      "trackId": "6hpi_4sU_IAA_XRN1_rep1",
-      "name": "6hpi_4sU_IAA_XRN1_rep1.cram",
+      "trackId": "6hpi_4sU_IAA_XRN1_rep1_cmv",
+      "name": "6hpi_4sU_IAA_XRN1_rep1_cmv.cram",
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep1.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep1_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep1.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -857,21 +827,21 @@
     },
     {
       "type": "AlignmentsTrack",
-      "trackId": "6hpi_4sU_IAA_XRN1_rep2",
-      "name": "6hpi_4sU_IAA_XRN1_rep2.cram",
+      "trackId": "6hpi_4sU_IAA_XRN1_rep2_cmv",
+      "name": "6hpi_4sU_IAA_XRN1_rep2_cmv.cram",
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep2.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep2_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep2.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep2_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -884,21 +854,21 @@
     },
     {
       "type": "AlignmentsTrack",
-      "trackId": "72hpi_4sU_IAA_XRN1_GCV_rep1",
-      "name": "72hpi_4sU_IAA_XRN1_GCV_rep1.cram",
+      "trackId": "72hpi_4sU_IAA_XRN1_GCV_rep1_cmv",
+      "name": "72hpi_4sU_IAA_XRN1_GCV_rep1_cmv.cram",
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_GCV_rep1.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_GCV_rep1_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_GCV_rep1.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_GCV_rep1_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -911,21 +881,21 @@
     },
     {
       "type": "AlignmentsTrack",
-      "trackId": "72hpi_4sU_IAA_XRN1_rep1",
-      "name": "72hpi_4sU_IAA_XRN1_rep1.cram",
+      "trackId": "72hpi_4sU_IAA_XRN1_rep1_cmv",
+      "name": "72hpi_4sU_IAA_XRN1_rep1_cmv.cram",
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep1.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep1_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep1.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -938,21 +908,21 @@
     },
     {
       "type": "AlignmentsTrack",
-      "trackId": "72hpi_4sU_IAA_XRN1_rep2",
-      "name": "72hpi_4sU_IAA_XRN1_rep2.cram",
+      "trackId": "72hpi_4sU_IAA_XRN1_rep2_cmv",
+      "name": "72hpi_4sU_IAA_XRN1_rep2_cmv.cram",
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep2.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep2_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep2.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep2_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -965,21 +935,21 @@
     },
     {
       "type": "AlignmentsTrack",
-      "trackId": "96hpi_4sU_IAA_XRN1_rep1",
-      "name": "96hpi_4sU_IAA_XRN1_rep1.cram",
+      "trackId": "96hpi_4sU_IAA_XRN1_rep1_cmv",
+      "name": "96hpi_4sU_IAA_XRN1_rep1_cmv.cram",
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/96hpi_4sU_IAA_XRN1_rep1.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/96hpi_4sU_IAA_XRN1_rep1_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/96hpi_4sU_IAA_XRN1_rep1.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/96hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -992,21 +962,21 @@
     },
     {
       "type": "AlignmentsTrack",
-      "trackId": "Mock_4sU_IAA_XRN1_rep1",
-      "name": "Mock_4sU_IAA_XRN1_rep1.cram",
+      "trackId": "Mock_4sU_IAA_XRN1_rep2_cmv",
+      "name": "Mock_4sU_IAA_XRN1_rep2_cmv.cram",
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep1.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep2_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep1.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep2_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
       ],
       "displays": [
         {
@@ -1019,21 +989,625 @@
     },
     {
       "type": "AlignmentsTrack",
-      "trackId": "Mock_4sU_IAA_XRN1_rep2",
-      "name": "Mock_4sU_IAA_XRN1_rep2.cram",
+      "trackId": "Mock_4sU_IAA_XRN1_rep3_cmv",
+      "name": "Mock_4sU_IAA_XRN1_rep3_cmv.cram",
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep2.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep3_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep2.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep3_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "cmv"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "colorBySetting": {
+            "type": "strand"
+          }
+        }
+      ]
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "human.sorted.gff",
+      "name": "Human_Annotation",
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/genome/human.sorted.gff.gz",
+          "locationType": "UriLocation"
+        },
+        "index": {
+          "location": {
+            "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/genome/human.sorted.gff.gz.tbi",
+            "locationType": "UriLocation"
+          },
+          "indexType": "TBI"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "12hpi_4sU_IAA_XRN1_rep1.human.plus",
+      "name": "12hpi_4sU_IAA_XRN1_rep1.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/12hpi_4sU_IAA_XRN1_rep1.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "12hpi_4sU_IAA_XRN1_rep2.human.plus",
+      "name": "12hpi_4sU_IAA_XRN1_rep2.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/12hpi_4sU_IAA_XRN1_rep2.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "24hpi_4sU_IAA_XRN1_rep1.human.plus",
+      "name": "24hpi_4sU_IAA_XRN1_rep1.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/24hpi_4sU_IAA_XRN1_rep1.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "24hpi_4sU_IAA_XRN1_rep2.human.plus",
+      "name": "24hpi_4sU_IAA_XRN1_rep2.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/24hpi_4sU_IAA_XRN1_rep2.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "2hpi_4sU_IAA_XRN1_rep1.human.plus",
+      "name": "2hpi_4sU_IAA_XRN1_rep1.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/2hpi_4sU_IAA_XRN1_rep1.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "2hpi_4sU_IAA_XRN1_rep2.human.plus",
+      "name": "2hpi_4sU_IAA_XRN1_rep2.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/2hpi_4sU_IAA_XRN1_rep2.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "48hpi_4sU_IAA_XRN1_rep1.human.plus",
+      "name": "48hpi_4sU_IAA_XRN1_rep1.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/48hpi_4sU_IAA_XRN1_rep1.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "6hpi_4sU_IAA_XRN1_rep1.human.plus",
+      "name": "6hpi_4sU_IAA_XRN1_rep1.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/6hpi_4sU_IAA_XRN1_rep1.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "6hpi_4sU_IAA_XRN1_rep2.human.plus",
+      "name": "6hpi_4sU_IAA_XRN1_rep2.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/6hpi_4sU_IAA_XRN1_rep2.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_4sU_IAA_XRN1_GCV_rep1.human.plus",
+      "name": "72hpi_4sU_IAA_XRN1_GCV_rep1.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_GCV_rep1.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_4sU_IAA_XRN1_rep1.human.plus",
+      "name": "72hpi_4sU_IAA_XRN1_rep1.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_rep1.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_4sU_IAA_XRN1_rep2.human.plus",
+      "name": "72hpi_4sU_IAA_XRN1_rep2.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_rep2.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "96hpi_4sU_IAA_XRN1_rep1.human.plus",
+      "name": "96hpi_4sU_IAA_XRN1_rep1.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/96hpi_4sU_IAA_XRN1_rep1.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Mock_4sU_IAA_XRN1_rep2.human.plus",
+      "name": "Mock_4sU_IAA_XRN1_rep2.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/Mock_4sU_IAA_XRN1_rep2.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Mock_4sU_IAA_XRN1_rep3.human.plus",
+      "name": "Mock_4sU_IAA_XRN1_rep3.human.plus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/Mock_4sU_IAA_XRN1_rep3.human.plus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "12hpi_4sU_IAA_XRN1_rep1.human.minus",
+      "name": "12hpi_4sU_IAA_XRN1_rep1.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/12hpi_4sU_IAA_XRN1_rep1.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "12hpi_4sU_IAA_XRN1_rep2.human.minus",
+      "name": "12hpi_4sU_IAA_XRN1_rep2.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/12hpi_4sU_IAA_XRN1_rep2.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "24hpi_4sU_IAA_XRN1_rep1.human.minus",
+      "name": "24hpi_4sU_IAA_XRN1_rep1.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/24hpi_4sU_IAA_XRN1_rep1.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "24hpi_4sU_IAA_XRN1_rep2.human.minus",
+      "name": "24hpi_4sU_IAA_XRN1_rep2.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/24hpi_4sU_IAA_XRN1_rep2.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "2hpi_4sU_IAA_XRN1_rep1.human.minus",
+      "name": "2hpi_4sU_IAA_XRN1_rep1.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/2hpi_4sU_IAA_XRN1_rep1.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "2hpi_4sU_IAA_XRN1_rep2.human.minus",
+      "name": "2hpi_4sU_IAA_XRN1_rep2.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/2hpi_4sU_IAA_XRN1_rep2.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "48hpi_4sU_IAA_XRN1_rep1.human.minus",
+      "name": "48hpi_4sU_IAA_XRN1_rep1.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/48hpi_4sU_IAA_XRN1_rep1.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "6hpi_4sU_IAA_XRN1_rep1.human.minus",
+      "name": "6hpi_4sU_IAA_XRN1_rep1.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/6hpi_4sU_IAA_XRN1_rep1.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "6hpi_4sU_IAA_XRN1_rep2.human.minus",
+      "name": "6hpi_4sU_IAA_XRN1_rep2.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/6hpi_4sU_IAA_XRN1_rep2.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_4sU_IAA_XRN1_GCV_rep1.human.minus",
+      "name": "72hpi_4sU_IAA_XRN1_GCV_rep1.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_GCV_rep1.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_4sU_IAA_XRN1_rep1.human.minus",
+      "name": "72hpi_4sU_IAA_XRN1_rep1.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_rep1.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "72hpi_4sU_IAA_XRN1_rep2.human.minus",
+      "name": "72hpi_4sU_IAA_XRN1_rep2.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/72hpi_4sU_IAA_XRN1_rep2.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "96hpi_4sU_IAA_XRN1_rep1.human.minus",
+      "name": "96hpi_4sU_IAA_XRN1_rep1.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/96hpi_4sU_IAA_XRN1_rep1.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Mock_4sU_IAA_XRN1_rep2.human.minus",
+      "name": "Mock_4sU_IAA_XRN1_rep2.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/Mock_4sU_IAA_XRN1_rep2.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Mock_4sU_IAA_XRN1_rep3.human.minus",
+      "name": "Mock_4sU_IAA_XRN1_rep3.human.minus.bw",
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/deeptools/coverage/Mock_4sU_IAA_XRN1_rep3.human.minus.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "my_bw-LinearWiggleDisplay",
+          "inverted": true
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "12hpi_4sU_IAA_XRN1_rep1_human",
+      "name": "12hpi_4sU_IAA_XRN1_rep1_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep1_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
       ],
       "displays": [
         {
@@ -1046,21 +1620,372 @@
     },
     {
       "type": "AlignmentsTrack",
-      "trackId": "Mock_4sU_IAA_XRN1_rep3",
-      "name": "Mock_4sU_IAA_XRN1_rep3.cram",
+      "trackId": "12hpi_4sU_IAA_XRN1_rep2_human",
+      "name": "12hpi_4sU_IAA_XRN1_rep2_human.cram",
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep3.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep2_human.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep3.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep2_human.cram.crai",
           "locationType": "UriLocation"
         }
       },
       "assemblyNames": [
-        "genome"
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "colorBySetting": {
+            "type": "strand"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "24hpi_4sU_IAA_XRN1_rep1_human",
+      "name": "24hpi_4sU_IAA_XRN1_rep1_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep1_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "colorBySetting": {
+            "type": "strand"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "24hpi_4sU_IAA_XRN1_rep2_human",
+      "name": "24hpi_4sU_IAA_XRN1_rep2_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep2_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep2_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "colorBySetting": {
+            "type": "strand"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "2hpi_4sU_IAA_XRN1_rep1_human",
+      "name": "2hpi_4sU_IAA_XRN1_rep1_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep1_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "colorBySetting": {
+            "type": "strand"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "2hpi_4sU_IAA_XRN1_rep2_human",
+      "name": "2hpi_4sU_IAA_XRN1_rep2_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep2_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep2_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "colorBySetting": {
+            "type": "strand"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "48hpi_4sU_IAA_XRN1_rep1_human",
+      "name": "48hpi_4sU_IAA_XRN1_rep1_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/48hpi_4sU_IAA_XRN1_rep1_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/48hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "colorBySetting": {
+            "type": "strand"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "6hpi_4sU_IAA_XRN1_rep1_human",
+      "name": "6hpi_4sU_IAA_XRN1_rep1_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep1_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "colorBySetting": {
+            "type": "strand"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "6hpi_4sU_IAA_XRN1_rep2_human",
+      "name": "6hpi_4sU_IAA_XRN1_rep2_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep2_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep2_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "colorBySetting": {
+            "type": "strand"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "72hpi_4sU_IAA_XRN1_GCV_rep1_human",
+      "name": "72hpi_4sU_IAA_XRN1_GCV_rep1_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_GCV_rep1_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_GCV_rep1_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "colorBySetting": {
+            "type": "strand"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "72hpi_4sU_IAA_XRN1_rep1_human",
+      "name": "72hpi_4sU_IAA_XRN1_rep1_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep1_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "colorBySetting": {
+            "type": "strand"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "72hpi_4sU_IAA_XRN1_rep2_human",
+      "name": "72hpi_4sU_IAA_XRN1_rep2_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep2_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep2_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "colorBySetting": {
+            "type": "strand"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "96hpi_4sU_IAA_XRN1_rep1_human",
+      "name": "96hpi_4sU_IAA_XRN1_rep1_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/96hpi_4sU_IAA_XRN1_rep1_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/96hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "colorBySetting": {
+            "type": "strand"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "Mock_4sU_IAA_XRN1_rep2_human",
+      "name": "Mock_4sU_IAA_XRN1_rep2_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep2_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep2_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
+      ],
+      "displays": [
+        {
+          "type": "LinearPileupDisplay",
+          "colorBySetting": {
+            "type": "strand"
+          }
+        }
+      ]
+    },
+    {
+      "type": "AlignmentsTrack",
+      "trackId": "Mock_4sU_IAA_XRN1_rep3_human",
+      "name": "Mock_4sU_IAA_XRN1_rep3_human.cram",
+      "adapter": {
+        "type": "CramAdapter",
+        "cramLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep3_human.cram",
+          "locationType": "UriLocation"
+        },
+        "craiLocation": {
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep3_human.cram.crai",
+          "locationType": "UriLocation"
+        }
+      },
+      "assemblyNames": [
+        "human"
       ],
       "displays": [
         {
@@ -1071,5 +1996,11 @@
         }
       ]
     }
-  ]
+  ],
+  "connections": [],
+  "aggregateTextSearchAdapters": [],
+  "configuration": {},
+  "defaultSession": {
+    "name": "New Session"
+  }
 }
