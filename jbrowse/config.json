@@ -616,11 +616,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep1_cmv.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep1_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -643,11 +643,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep2_cmv.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep2_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep2_cmv.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep2_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -670,11 +670,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep1_cmv.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep1_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -697,11 +697,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep2_cmv.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep2_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep2_cmv.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep2_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -724,11 +724,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep1_cmv.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep1_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -751,11 +751,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep2_cmv.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep2_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep2_cmv.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep2_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -778,11 +778,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/48hpi_4sU_IAA_XRN1_rep1_cmv.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/48hpi_4sU_IAA_XRN1_rep1_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/48hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/48hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -805,11 +805,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep1_cmv.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep1_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -832,11 +832,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep2_cmv.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep2_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep2_cmv.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep2_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -859,11 +859,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_GCV_rep1_cmv.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_GCV_rep1_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_GCV_rep1_cmv.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_GCV_rep1_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -886,11 +886,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep1_cmv.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep1_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -913,11 +913,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep2_cmv.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep2_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep2_cmv.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep2_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -940,11 +940,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/96hpi_4sU_IAA_XRN1_rep1_cmv.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/96hpi_4sU_IAA_XRN1_rep1_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/96hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/96hpi_4sU_IAA_XRN1_rep1_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -967,11 +967,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep2_cmv.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep2_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep2_cmv.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep2_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -994,11 +994,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep3_cmv.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep3_cmv.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep3_cmv.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep3_cmv.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -1598,11 +1598,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep1_human.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep1_human.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -1625,11 +1625,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep2_human.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep2_human.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep2_human.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/12hpi_4sU_IAA_XRN1_rep2_human.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -1652,11 +1652,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep1_human.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep1_human.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -1679,11 +1679,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep2_human.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep2_human.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep2_human.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/24hpi_4sU_IAA_XRN1_rep2_human.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -1706,11 +1706,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep1_human.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep1_human.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -1733,11 +1733,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep2_human.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep2_human.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep2_human.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/2hpi_4sU_IAA_XRN1_rep2_human.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -1760,11 +1760,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/48hpi_4sU_IAA_XRN1_rep1_human.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/48hpi_4sU_IAA_XRN1_rep1_human.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/48hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/48hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -1787,11 +1787,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep1_human.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep1_human.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -1814,11 +1814,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep2_human.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep2_human.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep2_human.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/6hpi_4sU_IAA_XRN1_rep2_human.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -1841,11 +1841,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_GCV_rep1_human.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_GCV_rep1_human.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_GCV_rep1_human.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_GCV_rep1_human.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -1868,11 +1868,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep1_human.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep1_human.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -1895,11 +1895,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep2_human.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep2_human.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep2_human.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/72hpi_4sU_IAA_XRN1_rep2_human.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -1922,11 +1922,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/96hpi_4sU_IAA_XRN1_rep1_human.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/96hpi_4sU_IAA_XRN1_rep1_human.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/96hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/96hpi_4sU_IAA_XRN1_rep1_human.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -1949,11 +1949,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep2_human.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep2_human.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep2_human.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep2_human.cram.crai",
           "locationType": "UriLocation"
         }
       },
@@ -1976,11 +1976,11 @@
       "adapter": {
         "type": "CramAdapter",
         "cramLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep3_human.cram",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep3_human.cram",
           "locationType": "UriLocation"
         },
         "craiLocation": {
-          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/home/runner/snakemake-scratch/fs/mnt/snakemake/tb40-slamseq-timeseries/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep3_human.cram.crai",
+          "uri": "https://js2.jetstream-cloud.org:8001/swift/v1/zandvakili-cmv-rna-seq/jurges2026-tb40-slamseq/results/processed_alignment/cram/Mock_4sU_IAA_XRN1_rep3_human.cram.crai",
           "locationType": "UriLocation"
         }
       },
